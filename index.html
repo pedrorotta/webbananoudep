@@ -8,7 +8,13 @@
     <title>Banano App Web</title>
 </head>
 <body>
-    
+    <header>
+        <div class="cabecera">
+            <div class="div-udep"><img src="header.png" alt="udep" class="udep"></div>
+            <div class="div-fondecyt"><img src="header2.png" alt="fondecyt" class="fondecyt"></div>
+
+        </div>
+    </header>
     <div class="container">
         <!-- Formulario de nombre del Productor -->
         <form id="form_pro">
@@ -44,7 +50,8 @@
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 1 (LD): Escamas</h4>
             <input type = "number" placeholder="Pedúnculo" required>
-            <input type = "number" placeholder="Tronco" required>
+            <input type = "number" placeholder="Hojas 4ta" required>
+            <input type = "number" placeholder="Hojas 5ta" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button" id = "atras-p1e">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p1e">Siguiente Plaga</button>
@@ -53,18 +60,75 @@
                 <button class="siguiente2" type="button" id = "siguiente-p12">Siguiente Planta</button>
             </div>
         </form>
+
+        <form id="form_P1_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 1 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p1c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p1c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "siguiente-p13">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P1_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 1 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p1p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p1p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "siguiente-p14">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P1_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 1 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p1ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p1ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "siguiente-p15">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P1_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 1 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p1pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p1pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "siguiente-p16">Siguiente Planta</button>
+            </div>
+        </form>
+
         <!-- Formulario 1era Planta, 3ra Plaga -->
         <form id="form_P1_moscas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 1 (LD): Moscas</h4>
-            <input type = "number" placeholder="Penunculo" required>
-            <input type = "number" placeholder="Hoja" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <input type = "number" placeholder="Hojas" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button" id = "atras-p1m">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p1m">Siguiente Plaga</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "siguiente-p13">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p17">Siguiente Planta</button>
             </div>
             
         </form>
@@ -72,14 +136,14 @@
         <form id="form_P1_arañita_roja">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 1 (LD) : Arañita Roja</h4>
-            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hijuelo" required>
             <input type = "number" placeholder="Hoja" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button"id = "atras-p1ar">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p1ar">Siguiente Planta</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "siguiente-p14">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p18">Siguiente Planta</button>
             </div>
         </form>
 
@@ -116,6 +180,66 @@
                 <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
             </div>
         </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
 
         <form id="form_P2_moscas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
@@ -127,8 +251,8 @@
                 <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
             </div>
         </form>
 
@@ -142,12 +266,14 @@
                 <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
             </div>
         </form>
         <!--############################################################################################  
         ################################################################################################-->
+        
+        
         <!-- Formulario 3ra Planta, trips  -->
         <form id="form_P3_trips">
             <h3 class="Titulos_1">Formulario de plagas</h3>
@@ -164,7 +290,7 @@
             </div>
         </form>
       
-        <!-- Formulario 3ra Planta, 2da Plaga -->
+        <!-- Formulario 2da Planta, 2da Plaga -->
 
         <form id="form_P3_escamas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
@@ -180,19 +306,79 @@
                 <button class="siguiente2" type="button" id = "siguiente-p32">Siguiente Planta</button>
             </div>
         </form>
+        
+        <form id="form_P3_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 3 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p3c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p3c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p33">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p33">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P3_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 3 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p3p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p3p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p34">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p34">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P3_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 3 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p3ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p3ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p35">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p35">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P3_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 3 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p3pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p3pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p36">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p36">Siguiente Planta</button>
+            </div>
+        </form>
 
         <form id="form_P3_moscas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 3 (LD) : Moscas</h4>
-            <input type = "number" placeholder="Penunculo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
             <input type = "number" placeholder="Hoja" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button" id = "atras-p3m">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p3m">Siguiente Plaga</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p33">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p33">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p37">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p37">Siguiente Planta</button>
             </div>
         </form>
 
@@ -206,13 +392,15 @@
                 <button class="atras" type="button" id = "siguiente-p3ar">Siguiente Planta</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p34">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p34">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p38">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p38">Siguiente Planta</button>
             </div>
         </form>
+        
         <!--############################################################################################  
         ################################################################################################-->
         <!-- Formulario 4ta Planta, trips  -->
+       
         <form id="form_P4_trips">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 4 (LD) : Trips</h4>
@@ -228,7 +416,7 @@
             </div>
         </form>
       
-        <!-- Formulario 4ra Planta, 2da Plaga -->
+        <!-- Formulario 2da Planta, 2da Plaga -->
 
         <form id="form_P4_escamas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
@@ -244,19 +432,79 @@
                 <button class="siguiente2" type="button" id = "siguiente-p42">Siguiente Planta</button>
             </div>
         </form>
+        
+        <form id="form_P4_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 4 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p4c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p4c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p43">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p43">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P4_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p4p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p4p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p44">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p44">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P4_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 4 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p4ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p4ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p45">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p45">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P4_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 4 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p4pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p4pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p46">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p46">Siguiente Planta</button>
+            </div>
+        </form>
 
         <form id="form_P4_moscas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 4 (LD) : Moscas</h4>
-            <input type = "number" placeholder="Penunculo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
             <input type = "number" placeholder="Hoja" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button" id = "atras-p4m">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p4m">Siguiente Plaga</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p43">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p43">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p47">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p47">Siguiente Planta</button>
             </div>
         </form>
 
@@ -270,15 +518,16 @@
                 <button class="atras" type="button" id = "siguiente-p4ar">Siguiente Planta</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p44">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p44">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p48">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p48">Siguiente Planta</button>
             </div>
         </form>
+        
 
-
-         <!--############################################################################################  
+        <!--############################################################################################  
         ################################################################################################-->
         <!-- Formulario 5ta Planta, trips  -->
+       
         <form id="form_P5_trips">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 5 (LD) : Trips</h4>
@@ -294,7 +543,7 @@
             </div>
         </form>
       
-        <!-- Formulario 4ra Planta, 2da Plaga -->
+        <!-- Formulario 2da Planta, 2da Plaga -->
 
         <form id="form_P5_escamas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
@@ -310,19 +559,79 @@
                 <button class="siguiente2" type="button" id = "siguiente-p52">Siguiente Planta</button>
             </div>
         </form>
+        
+        <form id="form_P5_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 5 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p5c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p5c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p53">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p53">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P5_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 5 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p5p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p5p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p54">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p54">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P5_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 5 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p5ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p5ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p55">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p55">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P5_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 5 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p5pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p5pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p56">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p56">Siguiente Planta</button>
+            </div>
+        </form>
 
         <form id="form_P5_moscas">
             <h3 class="Titulos_1">Formulario de plagas</h3>
             <h4 class="Titulos_2">Datos de Planta 5 (LD) : Moscas</h4>
-            <input type = "number" placeholder="Penunculo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
             <input type = "number" placeholder="Hoja" required>
             <div class="btn-box2">
                 <button class="siguiente2" type="button" id = "atras-p5m">Atrás</button>
                 <button class="atras" type="button" id = "siguiente-p5m">Siguiente Plaga</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p53">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p53">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p57">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p57">Siguiente Planta</button>
             </div>
         </form>
 
@@ -336,11 +645,2535 @@
                 <button class="atras" type="button" id = "siguiente-p5ar">Siguiente Planta</button>
             </div>
             <div class="btn-box3">
-                <button class="siguiente2" type="button" id = "atras-p54">Anterior Planta</button>
-                <button class="siguiente2" type="button" id = "siguiente-p54">Siguiente Planta</button>
+                <button class="siguiente2" type="button" id = "atras-p58">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p58">Siguiente Planta</button>
+            </div>
+        </form>
+        
+
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 6ta Planta, trips  -->
+       
+        <form id="form_P6_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p61">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p61">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P6_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p62">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p62">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P6_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p63">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p63">Siguiente Planta</button>
             </div>
         </form>
 
+        <form id="form_P6_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p64">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p64">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P6_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p65">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p65">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P6_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p66">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p66">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P6_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p6m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p67">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p67">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P6_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 6 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p6ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p6ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p68">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p68">Siguiente Planta</button>
+            </div>
+        </form>
+        
+
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 7ma Planta, trips  -->
+       
+        <form id="form_P7_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p71">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p71">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P7_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p72">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p72">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P7_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p73">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p73">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P7_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p74">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p74">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P7_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p75">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p75">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P7_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p76">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p76">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P7_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p7m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p77">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p77">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P7_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 7 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p7ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p7ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p78">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p78">Siguiente Planta</button>
+            </div>
+        </form>
+        
+
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 8tva Planta, trips  -->
+       
+        <form id="form_P8_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p81">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p81">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P8_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p82">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p82">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P8_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p83">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p83">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P8_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p84">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p84">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P8_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p85">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p85">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P8_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p86">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p86">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P8_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p8m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p87">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p87">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P8_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 8 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p8ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p8ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p88">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p88">Siguiente Planta</button>
+            </div>
+        </form>
+        
+
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 9na Planta, trips  -->
+       
+        <form id="form_P9_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p91">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p91">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P9_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p92">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p92">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P9_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p93">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p93">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P9_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p94">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p94">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P9_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p95">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p95">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P9_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p96">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p96">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P9_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p9m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p97">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p97">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P9_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 9 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p9ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p9ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p98">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p98">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 10ma Planta, trips  -->
+       
+        <form id="form_P10_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p101">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p101">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P10_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p102">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p102">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P10_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p103">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p103">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P10_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p104">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p104">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P10_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p105">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p105">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P10_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p106">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p106">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P10_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p10m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p107">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p107">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P10_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 10 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p10ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p10ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p108">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p108">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 11ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <!--############################################################################################  
+        ################################################################################################-->
+        <!-- Formulario 4ta Planta, trips  -->
+       
+        <form id="form_P2_trips">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Trips</h4>
+            <input type = "number" placeholder="Trips adultos" required>
+            <input type = "number" placeholder="Trips ninfas" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2t">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2t">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p21">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p21">Siguiente Planta</button>
+            </div>
+        </form>
+      
+        <!-- Formulario 2da Planta, 2da Plaga -->
+
+        <form id="form_P2_escamas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Escamas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Tronco" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2e">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2e">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p22">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p22">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_cochinilla">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Cochinilla</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Rácimo" required>
+            <input type = "number" placeholder="Pseudotallo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2c">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2c">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p23">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p23">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_picudo">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Picudo</h4>
+            <input type = "number" placeholder="Total de individuos" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2p">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2p">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p24">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p24">Siguiente Planta</button>
+            </div>
+        </form>
+        
+        <form id="form_P2_ceramidia">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Ceramidia</h4>
+            <input type = "number" placeholder="Hojas" required>
+            <input type = "number" placeholder="Hijuelo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2ce">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ce">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p25">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p25">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_pulgon">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Pulgón</h4>
+            <input type = "number" placeholder="Racimo" required>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2pu">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2pu">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p26">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p26">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_moscas">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD) : Moscas</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button" id = "atras-p2m">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2m">Siguiente Plaga</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p27">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p27">Siguiente Planta</button>
+            </div>
+        </form>
+
+        <form id="form_P2_arañita_roja">
+            <h3 class="Titulos_1">Formulario de plagas</h3>
+            <h4 class="Titulos_2">Datos de Planta 2 (LD): Arañita Roja</h4>
+            <input type = "number" placeholder="Pedúnculo" required>
+            <input type = "number" placeholder="Hoja" required>
+            <div class="btn-box2">
+                <button class="siguiente2" type="button"id = "atras-p2ar">Atrás</button>
+                <button class="atras" type="button" id = "siguiente-p2ar">Siguiente Planta</button>
+            </div>
+            <div class="btn-box3">
+                <button class="siguiente2" type="button" id = "atras-p28">Anterior Planta</button>
+                <button class="siguiente2" type="button" id = "siguiente-p28">Siguiente Planta</button>
+            </div>
+        </form>
+        
 
 
          <!--

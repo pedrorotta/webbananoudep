@@ -13,10 +13,71 @@ body{
 
 }
 
+header{
+    width: 100%;
+    height: 100px;
+    background-color:rgba(255,255,255,0.8);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabecera{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.div-udep{
+    width: 50%;
+    margin-left: 0px;
+    height: 100%;
+
+}
+
+.udep{
+    width: auto;
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 15px;
+
+}
+
+.div-fondecyt{
+    width: 50%;
+    margin-top: 0px;
+    height: 100%;
+    display: flex;
+
+}
+
+.fondecyt{
+    width: auto;
+    height: 90%;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 60%;
+
+}
+
+
+@media(max-width:500px){
+    .fondecyt{
+        width: auto;
+        height: 90%;
+        margin-top: 0px;
+        position: relative;
+        margin-left: 15%;
+    }
+}
+
+
 .container{
     width: 360px;
     height: 400px;
-    margin: 8% auto;
+    margin: 3% auto;
     background: #fff;
     border-radius: 5px;
     position: relative;
@@ -74,7 +135,7 @@ form button{
     width: 110px;
     height: 35px;
     margin: 0 10px;
-    background: linear-gradient(to right, #ff105f, #ffad06);
+    background: linear-gradient(to right, #000,  #001);
     border-radius: 30px;
     border: 0;
     outline: none;
@@ -84,21 +145,39 @@ form button{
 
 .btn-box2{
     width: 100%;
-    margin: 40px auto;
+    margin: 20px auto;
     text-align: center;
 }
 
 .btn-box3{
     width: 100%;
-    margin: -20px auto;
+    margin: -10px auto;
     text-align: center;
 }
 
+/* planta 1 */
 #form_P1_trips{
     left: 450px;
 }
 #form_P1_escamas{
     left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
 }
 
 #form_P1_moscas{
@@ -109,65 +188,767 @@ form button{
     left: 1350px;
 }
 
+/* planta 2 */
 #form_P2_trips{
     left: 450px;
 }
-
 #form_P2_escamas{
+    left: 900px;
+}
+
+#form_P2_cochinilla{
+    left: 450px;
+
+}
+
+#form_P2_picudo{
+    left: 450px;
+
+}
+
+#form_P2_ceramidia{
+    left: 450px;
+}
+#form_P2_pulgon{
     left: 450px;
 }
 
 #form_P2_moscas{
-    left: 450px;
+    left: 1350px;
 }
 
 #form_P2_arañita_roja{
-    left: 450px;
+    left: 1350px;
 }
 
+/* planta 3 */
 #form_P3_trips{
     left: 450px;
 }
-
 #form_P3_escamas{
+    left: 900px;
+}
+
+#form_P3_cochinilla{
+    left: 450px;
+
+}
+
+#form_P3_picudo{
+    left: 450px;
+
+}
+
+#form_P3_ceramidia{
+    left: 450px;
+}
+#form_P3_pulgon{
     left: 450px;
 }
 
 #form_P3_moscas{
-    left: 450px;
-}
-#form_P3_arañita_roja{
-    left: 450px;
+    left: 1350px;
 }
 
+#form_P3_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 4 */
 #form_P4_trips{
     left: 450px;
 }
-
 #form_P4_escamas{
+    left: 900px;
+}
+
+#form_P4_cochinilla{
+    left: 450px;
+
+}
+
+#form_P4_picudo{
+    left: 450px;
+
+}
+
+#form_P4_ceramidia{
+    left: 450px;
+}
+#form_P4_pulgon{
     left: 450px;
 }
 
 #form_P4_moscas{
-    left: 450px;
+    left: 1350px;
 }
+
 #form_P4_arañita_roja{
-    left: 450px;
+    left: 1350px;
 }
+
+/* planta 5 */
 #form_P5_trips{
     left: 450px;
 }
-
 #form_P5_escamas{
+    left: 900px;
+}
+
+#form_P5_cochinilla{
+    left: 450px;
+
+}
+
+#form_P5_picudo{
+    left: 450px;
+
+}
+
+#form_P5_ceramidia{
+    left: 450px;
+}
+#form_P5_pulgon{
     left: 450px;
 }
 
 #form_P5_moscas{
-    left: 450px;
+    left: 1350px;
 }
+
 #form_P5_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 6 */
+#form_P6_trips{
     left: 450px;
 }
+#form_P6_escamas{
+    left: 900px;
+}
+
+#form_P6_cochinilla{
+    left: 450px;
+
+}
+
+#form_P6_picudo{
+    left: 450px;
+
+}
+
+#form_P6_ceramidia{
+    left: 450px;
+}
+#form_P6_pulgon{
+    left: 450px;
+}
+
+#form_P6_moscas{
+    left: 1350px;
+}
+
+#form_P6_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 7 */
+#form_P7_trips{
+    left: 450px;
+}
+#form_P7_escamas{
+    left: 900px;
+}
+
+#form_P7_cochinilla{
+    left: 450px;
+
+}
+
+#form_P7_picudo{
+    left: 450px;
+
+}
+
+#form_P7_ceramidia{
+    left: 450px;
+}
+#form_P7_pulgon{
+    left: 450px;
+}
+
+#form_P7_moscas{
+    left: 1350px;
+}
+
+#form_P7_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 8 */
+#form_P8_trips{
+    left: 450px;
+}
+#form_P8_escamas{
+    left: 900px;
+}
+
+#form_P8_cochinilla{
+    left: 450px;
+
+}
+
+#form_P8_picudo{
+    left: 450px;
+
+}
+
+#form_P8_ceramidia{
+    left: 450px;
+}
+#form_P8_pulgon{
+    left: 450px;
+}
+
+#form_P8_moscas{
+    left: 1350px;
+}
+
+#form_P8_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 9 */
+#form_P9_trips{
+    left: 450px;
+}
+#form_P9_escamas{
+    left: 900px;
+}
+
+#form_P9_cochinilla{
+    left: 450px;
+
+}
+
+#form_P9_picudo{
+    left: 450px;
+
+}
+
+#form_P9_ceramidia{
+    left: 450px;
+}
+#form_P9_pulgon{
+    left: 450px;
+}
+
+#form_P9_moscas{
+    left: 1350px;
+}
+
+#form_P9_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 10 */
+#form_P10_trips{
+    left: 450px;
+}
+#form_P10_escamas{
+    left: 900px;
+}
+
+#form_P10_cochinilla{
+    left: 450px;
+
+}
+
+#form_P10_picudo{
+    left: 450px;
+
+}
+
+#form_P10_ceramidia{
+    left: 450px;
+}
+#form_P10_pulgon{
+    left: 450px;
+}
+
+#form_P10_moscas{
+    left: 1350px;
+}
+
+#form_P10_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+/* planta 1 */
+#form_P1_trips{
+    left: 450px;
+}
+#form_P1_escamas{
+    left: 900px;
+}
+
+#form_P1_cochinilla{
+    left: 450px;
+
+}
+
+#form_P1_picudo{
+    left: 450px;
+
+}
+
+#form_P1_ceramidia{
+    left: 450px;
+}
+#form_P1_pulgon{
+    left: 450px;
+}
+
+#form_P1_moscas{
+    left: 1350px;
+}
+
+#form_P1_arañita_roja{
+    left: 1350px;
+}
+
+
+
 
 
 
